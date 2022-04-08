@@ -1,0 +1,130 @@
+/*// Extra small devices (portrait phones, less than 576px)*/
+/*// No media query since this is the default in Bootstrap*/
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+    #map {
+        width: 100%;
+        min-height: 400px;
+    }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 992px) {
+    #map {
+        height: 622px;
+        min-width: 300px;
+    }
+
+    .c-content-feature-9 > .c-list > li > .c-card .c-content > h3 {
+        margin: 15px 0 15px 0 !important;
+    }
+
+    .c-content-feature-9 > .c-list > li {
+        padding: 0 0 0 40px !important;
+    }
+
+    .c-content-feature-9 > .c-list > li > .c-card {
+        padding: 10px 20px !important;
+    }
+
+    .c-content-feature-9 > .c-list > li {
+        width: 15% !important;
+    }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    #map {
+        height: 622px;
+        min-width: 300px;
+    }
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    #map {
+        height: 622px;
+        min-width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    #about-us, .footer-element {
+        padding: 30px !important;
+    }
+
+    .c-content-feature-1 p {
+        margin: 0 0 20px 0 !important;
+    }
+
+    .c-theme-font.c-font-uppercase.c-font-bold {
+        text-align: center !important;
+    }
+
+    .c-content-feature-9 > .c-list > li > .c-card .c-content > h3 {
+        margin: 0 0 20px 0 !important;
+
+    }
+
+    .c-content-client-logos-slider-1 .item img {
+        margin: 0 auto !important;
+    }
+    .service {
+        width: 40%;
+    }
+}
+
+.cbp-singlePage.cbp-l-caption-buttonLeft.btn.c-btn-square.c-btn-border-1x.c-btn-white.c-btn-bold.c-btn-uppercase {
+    font-size: 20px !important;
+    padding: 15px 50px !important;
+    margin: 20px auto !important;
+}
+
+#map {
+    border: none;
+    padding: 25px;
+
+}
+
+.c-content-tab-2.c-theme > ul > li.active > a > .c-title, .c-content-tab-2.c-theme > ul > li:hover > a > .c-title {
+    color: #1263B5 !important;
+}
+
+.c-theme-btn.btn {
+    background: #1263B5 !important;
+    border-color: #1263B5 !important;
+}
+
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+
+}
+
+.container.service {
+    width: 50% !important;
+    margin: auto !important;
+}
+
+.c-content-feature-9 > .c-list > li > .c-card > .c-content-left {
+    padding: 0 !important;
+}
+
+.c-content-tab-2 > .c-tab-content .tab-content {
+    padding: 40px 0;
+}
+
+.c-tab-content .c-bg-img-center1 .container {
+    padding: 0 !important;
+}
+
+.nav > li > a {
+    margin: 0 30px !important;
+}
+
+/*.c-content-feature-9 > .c-list > li {*/
+/*    width: 50% !important;*/
+/*}*/
+

@@ -1,0 +1,240 @@
+{% load static %}
+
+
+<!-- <h1>projects section</h1>
+{% for project in object_list %}
+
+<div class="project" id="{{ project.id }}">
+    <li>{{ project.name }}</li>
+    <img src="{{ project.image.url }}" alt="">
+    <li>{{ project.description }}</li>
+</div>
+
+{% empty %} 
+<li>No objects yet.</li>
+{% endfor %} -->
+
+
+<!-- BEGIN: CONTENT/ISOTOPE/GALLERY-1 -->
+<div class="c-content-box c-size-md c-bg-img-center"
+    style="background-image: url({% static 'assets/base/img/content/backgrounds/bg-62.jpg' %})">
+    <div class="container">
+        <div class="c-content-title-1">
+            <h3 class="c-center c-font-uppercase c-font-bold c-font-white">Our Projects</h3>
+            <div class="c-line-center c-theme-bg"></div>
+        </div>
+        <div class="c-content-isotope-gallery c-opt-1">
+            {% if object_list.0 %}
+            <div id="{{ object_list.0.id }}" class="c-content-isotope-item wow animate zoomIn" data-wow-delay="0">
+                <div class="c-content-isotope-image-container">
+                    <img class="c-content-isotope-image" src="{{ object_list.0.main_photo.url }}" />
+                    <div class="c-content-isotope-overlay c-ilightbox-image-1"
+                        href="{{ object_list.0.main_photo.url }}"
+                        data-options="thumbnail:'{{ object_list.0.main_photo.url }}'"
+                        data-caption="<h4>{{ object_list.0.name }}</h4><p>{{ object_list.0.description }}</p>">
+                        <div class="c-content-isotope-overlay-icon">
+                            <i class="fa fa-plus c-font-white"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% else %}
+            <div class="c-content-isotope-item wow animate zoomIn" data-wow-delay="0">
+                <div class="c-content-isotope-image-container">
+                    <img class="c-content-isotope-image" src="{% static 'assets/base/img/empty/empty.png' %}" />
+                    <div class="c-content-isotope-overlay c-ilightbox-image-1"
+                        href="{% static 'assets/base/img/empty/empty.png' %}"
+                        data-options="thumbnail:'{% static 'assets/base/img/empty/empty.png' %}'"
+                        data-caption="<h4>Not found.</h4>">
+                        <div class="c-content-isotope-overlay-icon">
+                            <i class="fa fa-plus c-font-white"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+            {% if object_list.1 %}
+            <div id="{{ object_list.1.id }}" class="c-content-isotope-item c-item-size-double wow animate zoomIn" data-wow-delay="0.1s">
+                <div class="c-content-isotope-image-container">
+                    <img class="c-content-isotope-image" src="{{ object_list.1.main_photo.url }}" />
+                    
+                    <div class="c-content-isotope-overlay c-ilightbox-image-1"
+                        href="{{ object_list.1.main_photo.url }}"
+                        data-options="thumbnail:'{{ object_list.1.main_photo.url }}'"
+                        data-caption="<h4>{{ object_list.1.name }}</h4><p>{{ object_list.1.description }}</p>">
+                        <div class="c-content-isotope-overlay-icon">
+                            <i class="fa fa-plus c-font-white"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% else %}
+            <div class="c-content-isotope-item wow animate zoomIn" data-wow-delay="0">
+                <div class="c-content-isotope-image-container">
+                    <img class="c-content-isotope-image" src="{% static 'assets/base/img/empty/empty.png' %}" />
+                    <div class="c-content-isotope-overlay c-ilightbox-image-1"
+                        href="{% static 'assets/base/img/empty/empty.png' %}"
+                        data-options="thumbnail:'{% static 'assets/base/img/empty/empty.png' %}'"
+                        data-caption="<h4>Not found.</h4>">
+                        <div class="c-content-isotope-overlay-icon">
+                            <i class="fa fa-plus c-font-white"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+            {% if object_list.2 %}
+            <div class="c-content-isotope-item">
+                <div id="{{ object_list.2.id }}" class="c-content-isotope-image-container wow animate zoomIn" data-wow-delay="0.2s">
+                    <img class="c-content-isotope-image" src="{{ object_list.2.main_photo.url }}" />
+                    <div class="c-content-isotope-overlay c-ilightbox-image-1"
+                        href="{{ object_list.2.main_photo.url }}"
+                        data-options="thumbnail:'{{ object_list.2.main_photo.url }}'"
+                        data-caption="<h4>{{ object_list.2.name }}</h4><p>{{ object_list.2.description }}</p>">
+                        <div class="c-content-isotope-overlay-icon">
+                            <i class="fa fa-plus c-font-white"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% else %}
+            <div class="c-content-isotope-item wow animate zoomIn" data-wow-delay="0">
+                <div class="c-content-isotope-image-container">
+                    <img class="c-content-isotope-image" src="{% static 'assets/base/img/empty/empty.png' %}" />
+                    <div class="c-content-isotope-overlay c-ilightbox-image-1"
+                        href="{% static 'assets/base/img/empty/empty.png' %}"
+                        data-options="thumbnail:'{% static 'assets/base/img/empty/empty.png' %}'"
+                        data-caption="<h4>Not found.</h4>">
+                        <div class="c-content-isotope-overlay-icon">
+                            <i class="fa fa-plus c-font-white"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+            
+            {% if object_list.3 %}
+            <div class="c-content-isotope-item">
+                <div id="{{ object_list.3.id }}" class="c-content-isotope-image-container wow animate zoomIn" data-wow-delay="0.3s">
+                    <img class="c-content-isotope-image" src="{{ object_list.3.main_photo.url }}" />
+                    <div class="c-content-isotope-overlay c-ilightbox-image-1"
+                        href="{{ object_list.3.main_photo.url }}"
+                        data-options="thumbnail:'{{ object_list.3.main_photo.url }}'"
+                        data-caption="<h4>{{ object_list.3.name }}</h4><p>{{ object_list.3.description }}</p>">
+                        <div class="c-content-isotope-overlay-icon">
+                            <i class="fa fa-plus c-font-white"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% else %}
+            <div class="c-content-isotope-item wow animate zoomIn" data-wow-delay="0">
+                <div class="c-content-isotope-image-container">
+                    <img class="c-content-isotope-image" src="{% static 'assets/base/img/empty/empty.png' %}" />
+                    <div class="c-content-isotope-overlay c-ilightbox-image-1"
+                        href="{% static 'assets/base/img/empty/empty.png' %}"
+                        data-options="thumbnail:'{% static 'assets/base/img/empty/empty.png' %}'"
+                        data-caption="<h4>Not found.</h4>">
+                        <div class="c-content-isotope-overlay-icon">
+                            <i class="fa fa-plus c-font-white"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+            {% if object_list.4 %}
+            <div class="c-content-isotope-item">
+                <div id="{{ object_list.4.id }}" class="c-content-isotope-image-container wow animate zoomIn" data-wow-delay="0.4s">
+                    <img class="c-content-isotope-image" src="{{ object_list.4.main_photo.url }}"  />
+                    <div class="c-content-isotope-overlay c-ilightbox-image-1"
+                        href="{{ object_list.4.main_photo.url }}"
+                        data-options="thumbnail:'{{ object_list.4.main_photo.url }}'"
+                        data-caption="<h4>{{ object_list.4.name }}</h4><p>{{ object_list.4.description }}</p>">
+                        <div class="c-content-isotope-overlay-icon">
+                            <i class="fa fa-plus c-font-white"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% else %}
+            <div class="c-content-isotope-item wow animate zoomIn" data-wow-delay="0">
+                <div class="c-content-isotope-image-container">
+                    <img class="c-content-isotope-image" src="{% static 'assets/base/img/empty/empty.png' %}"  />
+                    <div class="c-content-isotope-overlay c-ilightbox-image-1"
+                        href="{% static 'assets/base/img/empty/empty.png' %}"
+                        data-options="thumbnail:'{% static 'assets/base/img/empty/empty.png' %}'"
+                        data-caption="<h4>Not found.</h4>">
+                        <div class="c-content-isotope-overlay-icon">
+                            <i class="fa fa-plus c-font-white"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+            {% if object_list.5 %}
+            <div class="c-content-isotope-item">
+                <div id="{{ object_list.5.id }}" class="c-content-isotope-image-container wow animate zoomIn" data-wow-delay="0.3s">
+                    <img class="c-content-isotope-image" src="{{ object_list.5.main_photo.url }}" />
+                    <div class="c-content-isotope-overlay c-ilightbox-image-1"
+                        href="{{ object_list.5.main_photo.url }}"
+                        data-options="thumbnail:'{{ object_list.5.main_photo.url }}'"
+                        data-caption="<h4>{{ object_list.5.name }}</h4><p>{{ object_list.5.description }}</p>">
+                        <div class="c-content-isotope-overlay-icon">
+                            <i class="fa fa-plus c-font-white"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% else %}
+            <div class="c-content-isotope-item wow animate zoomIn" data-wow-delay="0">
+                <div class="c-content-isotope-image-container">
+                    <img class="c-content-isotope-image" src="{% static 'assets/base/img/empty/empty.png' %}"  />
+                    <div class="c-content-isotope-overlay c-ilightbox-image-1"
+                        href="{% static 'assets/base/img/empty/empty.png' %}"
+                        data-options="thumbnail:'{% static 'assets/base/img/empty/empty.png' %}'"
+                        data-caption="<h4>Not found.</h4>">
+                        <div class="c-content-isotope-overlay-icon">
+                            <i class="fa fa-plus c-font-white"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+            {% if object_list.6 %}
+            <div class="c-content-isotope-item">
+                <div id="{{ object_list.6.id }}" class="c-content-isotope-image-container wow animate zoomIn" data-wow-delay="0.3s">
+                    <img class="c-content-isotope-image" src="{{ object_list.6.main_photo.url }}" />
+                    <div class="c-content-isotope-overlay c-ilightbox-image-1"
+                        href="{{ object_list.6.main_photo.url }}"
+                        data-options="thumbnail:'{{ object_list.6.main_photo.url }}'"
+                        data-caption="<h4>{{ object_list.6.name }}</h4><p>{{ object_list.6.description }}</p>">
+                        <div class="c-content-isotope-overlay-icon">
+                            <i class="fa fa-plus c-font-white"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% else %}
+            <div class="c-content-isotope-item wow animate zoomIn" data-wow-delay="0">
+                <div class="c-content-isotope-image-container">
+                    <img class="c-content-isotope-image" src="{% static 'assets/base/img/empty/empty.png' %}"  />
+                    <div class="c-content-isotope-overlay c-ilightbox-image-1"
+                        href="{% static 'assets/base/img/empty/empty.png' %}"
+                        data-options="thumbnail:'{% static 'assets/base/img/empty/empty.png' %}'"
+                        data-caption="<h4>Not found.</h4>">
+                        <div class="c-content-isotope-overlay-icon">
+                            <i class="fa fa-plus c-font-white"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+        <div class="col text-center" style="margin-top: 2%;">
+        <a href="{% url 'projects' %}" class="cbp-singlePage cbp-l-caption-buttonLeft btn c-btn-square c-btn-border-1x c-btn-white c-btn-bold c-btn-uppercase">See More</a>
+        </div>
+    </div>
+</div>
+<!-- END: CONTENT/ISOTOPE/GALLERY-1 -->
+
+

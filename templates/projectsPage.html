@@ -1,0 +1,253 @@
+{% load static %}
+
+<!DOCTYPE html>
+<!--[if IE 9]>
+<html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+
+<head>
+    <meta charset="utf-8" />
+    <title>Projects</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link
+        href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700&amp;subset=all'
+        rel='stylesheet' type='text/css'>
+    <link href="{% static 'assets/plugins/socicon/socicon.css' %}" rel="stylesheet" type="text/css" />
+    <link href="{% static 'assets/plugins/bootstrap-social/bootstrap-social.css' %}" rel="stylesheet" type="text/css" />
+    <link href="{% static 'assets/plugins/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css" />
+    <link href="{% static 'assets/plugins/simple-line-icons/simple-line-icons.min.css' %}" rel="stylesheet"
+        type="text/css" />
+    <link href="{% static 'assets/plugins/animate/animate.min.css' %}" rel="stylesheet" type="text/css" />
+    <link href="{% static 'assets/plugins/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css" />
+    <!-- END GLOBAL MANDATORY STYLES -->
+
+    <!-- BEGIN: BASE PLUGINS  -->
+    <link href="{% static 'assets/plugins/cubeportfolio/css/cubeportfolio.min.css' %}" rel="stylesheet"
+        type="text/css" />
+    <link href="{% static 'assets/plugins/owl-carousel/assets/owl.carousel.css' %}" rel="stylesheet" type="text/css" />
+    <link href="{% static 'assets/plugins/fancybox/jquery.fancybox.css' %}" rel="stylesheet" type="text/css" />
+    <link href="{% static 'assets/plugins/slider-for-bootstrap/css/slider.css' %}" rel="stylesheet" type="text/css" />
+    <!-- END: BASE PLUGINS -->
+
+
+    <!-- BEGIN THEME STYLES -->
+    <link href="{% static 'assets/demos/default/css/plugins.css' %}" rel="stylesheet" type="text/css" />
+    <link href="{% static 'assets/demos/default/css/components.css' %}" id="style_components" rel="stylesheet"
+        type="text/css" />
+    <link href="{% static 'assets/demos/default/css/themes/default.css' %}" rel="stylesheet" id="style_theme"
+        type="text/css" />
+    <link href="{% static 'assets/demos/default/css/custom.css' %}" rel="stylesheet" type="text/css" />
+    <!-- END THEME STYLES -->
+    <link href="{% static 'assets/styles/override-styles.css' %}" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="{% static 'assets/favicon.ico' %}"/>
+</head>
+
+<body class="c-layout-header-fixed c-layout-header-mobile-fixed">
+    <!-- BEGIN: LAYOUT/HEADERS/HEADER-1 -->
+    <!-- BEGIN: HEADER -->
+    <header class="c-layout-header c-layout-header-4 c-layout-header-default-mobile" data-minimize-offset="80">
+        <div class="c-navbar">
+            <div class="container">
+                <!-- BEGIN: BRAND -->
+                <div class="c-navbar-wrapper clearfix">
+                    <div class="c-brand c-pull-left">
+                        <a href="{% url 'home' %}" class="c-logo">
+                            <img src="{% static 'assets/base/img/layout/logos/logo-3.png' %}" alt="JANGO"
+                                class="c-desktop-logo">
+                            <img src="{% static 'assets/base/img/layout/logos/logo-3.png' %}" alt="JANGO"
+                                class="c-desktop-logo-inverse">
+                            <img src="{% static 'assets/base/img/layout/logos/logo-3.png' %}" alt="JANGO"
+                                class="c-mobile-logo"> </a>
+                    </div>
+                    <div class="c-brand c-pull-left">
+                        <a href="{% url 'home' %}" class="c-mobile-logo">
+                            <svg id="homeIcon" xmlns="http://www.w3.org/2000/svg" style="    padding: 8px;
+                        background-color: #f5f6f8; border-radius: 3px; position: absolute; right: 3%; top:15px ;"
+                                width="35" height="35" fill="#bac3cd" class="bi bi-house" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                                <path fill-rule="evenodd"
+                                    d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+                            </svg>
+                        </a>
+                    </div>
+
+
+                    <!-- END: BRAND -->
+
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- END: HEADER -->
+
+    <body>
+        <div class="c-layout-page">
+            <div class="c-layout-breadcrumbs-1 c-fonts-uppercase c-fonts-bold">
+                <div class="container">
+                    <div class="c-page-title c-pull-left">
+                        <h3 class="c-font-uppercase c-font-sbold">Our Projects</h3>
+                    </div>
+                    <div class="c-page-breadcrumbs c-theme-nav c-pull-right c-fonts-regular">
+                        <a href="{% url 'home' %}" class="c-desktop-logo">
+                            HOME
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- BEGIN: PAGE CONTENT -->
+        <div class="c-content-box c-size-md" style="padding:  60px 0 0 0 !important;">
+            <div class="container">
+                <!-- Begin: Cubeportfolio grid -->
+                <div class="cbp-panel">
+                    <div id="grid-container" class="cbp cbp-l-grid-masonry-projects">
+                        {% for project in object_list %}
+                        <div class="cbp-item graphic">
+                            <div class="cbp-caption">
+                                <div class="cbp-caption-defaultWrap">
+                                    <img src="{{project.main_photo.url}}" alt="">
+                                </div>
+                                <div class="cbp-caption-activeWrap">
+                                    <div class="c-masonry-border"></div>
+                                    <div class="cbp-l-caption-alignCenter">
+                                        <div class="cbp-l-caption-body">
+                                            <a href="{{project.main_photo.url}}"
+                                                class="cbp-lightbox cbp-l-caption-buttonRight btn c-btn-square c-btn-border-1x c-btn-white c-btn-bold c-btn-uppercase"
+                                                data-title="{{project.name}}">Zoom</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h2 class="cbp-singlePage cbp-l-grid-masonry-projects-title">{{project.name}}</h2>
+                            <div class="cbp-l-grid-masonry-projects-desc">{{project.description}}</div>
+                        </div>
+
+                        {% empty %}
+                        <p>No data found.</p>
+                        {% endfor %}
+                    </div>
+                    <br><br><br>
+                    <!-- End-->
+                </div>
+            </div>
+            <!-- End-->
+            <!-- BEGIN: LAYOUT/FOOTERS/FOOTER-5 -->
+            <footer class="c-layout-footer c-layout-footer-1">
+                <div class="c-prefooter footer-element">
+                    <div class="container">
+                        <div class="row">
+                            
+                            <div class="col-md-4">
+                                <div class="c-logo">
+                                    <a href="{% url 'home' %}">
+                                        <img src="{% static 'assets/images/footer-logo.svg' %}" alt="Jango">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="c-feedback">
+                                    <p class="c-about" style="color: white; font-size: 25px;">
+                                        Connect With Us
+                                    </p>
+                                    <p class="c-contact">
+                                        <img src="{% static 'assets/images/icons/verona-email.svg' %}" alt="">
+                                        info@verona-id.com
+                                        <br><br>
+                                        <img src="{% static 'assets/images/icons/verona-phone.svg' %}" alt="">
+                                        +962 79 8746 5823
+                                        <br><br>
+                                        <img src="{% static 'assets/images/icons/verona-location.svg' %}" alt="">
+                                        Amman, Jordan.
+                                        <br>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="c-feedback">
+                                    <p class="c-about" style="color: white; font-size: 25px;">
+                                        View Our Work
+                                    </p><br>
+                                    <div
+                                        style="width: 250px; display: flex;flex-direction: row; justify-content: flex-start;">
+                                        <a style="color: white; font-size: 20px;margin-right: 15px;" href="https://web.facebook.com/VeronaID?_rdc=1&_rdr"><i
+                                                class="icon-social-facebook"></i></a>
+                                        <a style="color: white; margin-right: 15px;" href="https://www.instagram.com/verona.interior.design/"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="24" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                                          </svg></a>
+                                    </div>
+                                    <br>
+                                    © 2021 Verona Interior Design.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+    </body>
+    <div class="c-layout-go2top">
+        <i class="icon-arrow-up"></i>
+    </div>
+    <!-- BEGIN: LAYOUT/FOOTERS/GO2TOP -->
+    <div class="c-layout-go2top">
+        <i class="icon-arrow-up"></i>
+    </div>
+    <!-- END: LAYOUT/FOOTERS/GO2TOP -->
+
+
+
+    <!-- BEGIN: LAYOUT/BASE/BOTTOM -->
+    <!-- BEGIN: CORE PLUGINS -->
+    <script src="{% static 'assets/plugins/jquery.min.js' %}" type="text/javascript"></script>
+    <script src="{% static 'assets/plugins/jquery-migrate.min.js' %}" type="text/javascript"></script>
+    <script src="{% static 'assets/plugins/bootstrap/js/bootstrap.min.js' %}" type="text/javascript"></script>
+    <script src="{% static 'assets/plugins/jquery.easing.min.js' %}" type="text/javascript"></script>
+    <script src="{% static 'assets/plugins/reveal-animate/wow.js' %}" type="text/javascript"></script>
+    <script src="{% static 'assets/demos/default/js/scripts/reveal-animate/reveal-animate.js' %}"
+        type="text/javascript"></script>
+
+    <!-- END: CORE PLUGINS -->
+
+    <!-- BEGIN: LAYOUT PLUGINS -->
+    <script src="{% static 'assets/plugins/cubeportfolio/js/jquery.cubeportfolio.min.js' %}"
+        type="text/javascript"></script>
+    <script src="{% static 'assets/plugins/owl-carousel/owl.carousel.min.js' %}" type="text/javascript"></script>
+    <script src="{% static 'assets/plugins/counterup/jquery.counterup.min.js' %}" type="text/javascript"></script>
+    <script src="{% static 'assets/plugins/counterup/jquery.waypoints.min.js' %}" type="text/javascript"></script>
+    <script src="{% static 'assets/plugins/fancybox/jquery.fancybox.pack.js' %}" type="text/javascript"></script>
+    <script src="{% static 'assets/plugins/smooth-scroll/jquery.smooth-scroll.js' %}" type="text/javascript"></script>
+    <script src="{% static 'assets/plugins/slider-for-bootstrap/js/bootstrap-slider.js' %}"
+        type="text/javascript"></script>
+    <script src="{% static 'assets/plugins/js-cookie/js.cookie.js' %}" type="text/javascript"></script>
+    <!-- END: LAYOUT PLUGINS -->
+
+    <!-- BEGIN: THEME SCRIPTS -->
+    <script src="{% static 'assets/base/js/components.js' %}" type="text/javascript"></script>
+    <script src="{% static 'assets/base/js/components-shop.js' %}" type="text/javascript"></script>
+    <script src="{% static 'assets/base/js/app.js' %}" type="text/javascript"></script>
+    <script>
+        $(document).ready(function () {
+            App.init(); // init core    
+        });
+    </script>
+    <!-- END: THEME SCRIPTS -->
+
+    <!-- BEGIN: PAGE SCRIPTS -->
+    <script src="{% static 'assets/demos/default/js/scripts/pages/extended-portfolio.js' %}"
+        type="text/javascript"></script>
+    <!-- END: PAGE SCRIPTS -->
+    <!-- END: LAYOUT/BASE/BOTTOM -->
+
+
+</body>
+
+</html>
